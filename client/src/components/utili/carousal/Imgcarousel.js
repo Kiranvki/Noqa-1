@@ -6,8 +6,14 @@ import rightA from "../../images/rightA.png";
 import leftA from "../../images/leftA.png";
 import croma from "../../images/Croma.png";
 import amazon from "../../images/amazon.png";
+import edit from "../../images/edit.png";
 import { Grid, Stack, Typography, Box, Avatar } from "@mui/material";
 import { Container } from "@mui/material";
+import Link from "@mui/material/Link";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import { CardHeader, CardDes } from "../../styles/products";
 
 export function Imgcarousel() {
   const sliderRef = useRef(null);
@@ -129,25 +135,579 @@ export function Clientcarousel() {
   return (
     <>
       <Slider {...settings}>
-          <div className="">
-            <img src={croma} className="img-fluid"/>
-          </div>
-          <div className="">
-            <img src={amazon} className="img-fluid"/>
-          </div>
-          <div className="">
-            <img src={croma} className="img-fluid"/>
-          </div>
-          <div className="">
-            <img src={croma} className="img-fluid"/>
-          </div>
-          <div className="">
-            <img src={croma} className="img-fluid"/>
-          </div>
-          <div className="">
-            <img src={amazon} className="img-fluid"/>
-          </div>
-        </Slider>
+        <div className="">
+          <img src={croma} className="img-fluid" />
+        </div>
+        <div className="">
+          <img src={amazon} className="img-fluid" />
+        </div>
+        <div className="">
+          <img src={croma} className="img-fluid" />
+        </div>
+        <div className="">
+          <img src={croma} className="img-fluid" />
+        </div>
+        <div className="">
+          <img src={croma} className="img-fluid" />
+        </div>
+        <div className="">
+          <img src={amazon} className="img-fluid" />
+        </div>
+      </Slider>
+    </>
+  );
+}
+
+export function Blogcarousel() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
+  return (
+    <>
+      <Slider {...settings}>
+        <Grid container spacing={3} direction={"row"} sx={{display:"flex",flexDirection:"row"}}>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+        <Grid container spacing={3} direction={"row"} sx={{display:"flex",flexDirection:"row"}}>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item md={3} sm={6} xm={6} lg={3}>
+            <Box
+              component="div"
+              sx={{
+                paddingY: "20px",
+              }}
+            >
+              <Link href="/menulist">
+                <Card
+                  elevation={3}
+                  sx={{
+                    boxSizing: "border-box",
+                    padding: "0px",
+                    borderRadius: "0px",
+                    height: "350px",
+                    backgroundColor: "#F0F0F0",
+                    transition: "0.5s ease 0s, transform 0.5s ease 0s;",
+                  }}
+                  // className="zoomer"
+                >
+                  {/* <CardMedia
+                    component="img"
+                    height="140"
+                    sx={{ padding: "0px", padding: "10px" }}
+                    image={edit}
+                    alt="Order Online"
+                  /> */}
+                  <Avatar src={edit} sx={{ margin: "30px" }} />
+                  <CardContent>
+                    <CardHeader
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "120%",
+                        marginBottom: "40px",
+                        textAlign: "left",
+                      }}
+                      l
+                      // style={{ textAlign: "left", marginBottom: "10px" }}
+                      gutterBottom
+                    >
+                      File a new
+                    </CardHeader>
+                    <CardDes gutterBottom sx={{ marginBottom: "20px" }}>
+                      Notify us via our app or website to register your claim
+                      quickly and hassle-free.
+                    </CardDes>
+                    <Box className="port-content1">
+                      <Typography
+                        CommonHeader1
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: "700",
+                          lineHeight: "140%",
+                          textAlign: "left",
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        Continue
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+        
+        
+      </Slider>
     </>
   );
 }

@@ -241,7 +241,7 @@ export default function Testimonials() {
                           fontSize: "20px",
                           fontWeight: "700",
                           lineHeight: "140%",
-                          // textAlign: "left",
+                          textAlign: "left",
                           textTransform: "capitalize",
                         }}
                       >

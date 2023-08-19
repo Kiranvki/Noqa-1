@@ -7,6 +7,7 @@ import { Container } from "@mui/material";
 import ProductsList from "./Products/ProductsList";
 import Promotions from "./Promotions";
 import Testimonials from "./Testimonials";
+import Blog from "./Blog";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ProductsList />
       <Promotions />
       <Testimonials />
+      <Blog/>
     </Stack>
   );
 }
