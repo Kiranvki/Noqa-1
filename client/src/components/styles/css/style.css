@@ -1,0 +1,54 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  overflow: initial !important;
+  padding-right: 0px !important;
+}
+
+.ModNav {
+  padding: 0px 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.dropdown-toggle::after {
+  color: #fff;
+  /* z-index: 99; */
+}
+.navBtn:hover {
+  background-color: #fff !important;
+}
+.navBtn:hover .btnText {
+  color: #000 !important;
+  font-weight: 500;
+}
+.navBtn.dropdown-toggle:hover::after {
+  color: #000 !important;
+}
+
+/* .dropdown-menu.show{
+    transform: translate3d(-550px, 52px, 0px) !important;
+} */
+
+p.navCardheader {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 140%; /* 28px */
+  letter-spacing: 1px;
+}
+
+.navCardCon {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%; /* 24.32px */
+  letter-spacing: 0.8px;
+}
+
+.css-155nyw6-MuiButton-endIcon > *:nth-of-type(1) {
+  font-size: 30px;
+}
+

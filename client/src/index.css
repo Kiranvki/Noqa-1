@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
+}
+
+div.port-content {
+  position: relative !important;
+}
+
+div.port-content .CommonHeader::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50%;
+  /* background-color: #f5f5f5; */
+  height: 3px;
+  bottom: 0;
+}
+
+div.port-content .CommonHeader::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 25%;
+  background-color: #fb0000;
+  height: 12px;
+  bottom: 0;
+}
+div.port-content .CommonHeader {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 20px;
+  z-index: 1;
+  padding-bottom: 7px;
+}
+
+
+div.port-content1 {
+  background: var(--red-gradient-red-1, linear-gradient(90deg, #A80000 0%, #FF2323 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.noqa {
+  height: 98% !important;
+  background-size: cover !important;
+}
+
+.zoomer:hover {
+  transform: scale(1.1);
+}
+
+.slick-dots li.slick-active button:before {
+  color:#E43600 !important;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
